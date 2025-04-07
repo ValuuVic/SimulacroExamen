@@ -10,5 +10,6 @@ namespace SimulacroExamen
     {
         public string nombre {  get; set; }
         public string taller { get; set; }
+        //public int total { get; set; }
     }
 }

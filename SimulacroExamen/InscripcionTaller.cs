@@ -12,5 +12,6 @@ namespace SimulacroExamen
         public string DPI {  get; set; }
         public string Codigo { get; set; }
         public DateTime inscripcion {  get; set; }
+        public int inscritos { get; set; }
     }
 }

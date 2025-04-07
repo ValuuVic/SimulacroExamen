@@ -37,6 +37,7 @@ namespace SimulacroExamen
             inscripcion.DPI = comboBox1.SelectedValue.ToString();
             inscripcion.Codigo = comboBox2.SelectedValue.ToString();
             inscripcion.inscripcion = DateTime.Now;
+            inscripcion.inscritos++;
             inscripciones.Add(inscripcion);
             InscripcionArchivo inscripcionArchivo = new InscripcionArchivo();
             inscripcionArchivo.guardar("../../Inscripciones.json", inscripciones);

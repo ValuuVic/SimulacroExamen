@@ -49,11 +49,20 @@ namespace SimulacroExamen
                             Reporte reporte = new Reporte();
                             reporte.nombre = alumno.nombre;
                             reporte.taller = taller.nombreTaller;
+                            //reporte.total = InscripcionTaller.inscritos;
                             reportes.Add(reporte);
                         }
                     }
                 }
             }
+        }
+        private void alumn()
+        {
+            int total = inscripciones.Count;
+            label3.Text = total + " alumnos inscritos";
+            label2.Visible = true;
+            label3.Visible = true; 
+
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -71,6 +80,7 @@ namespace SimulacroExamen
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = reportes;
             dataGridView1.Refresh();
+            alumn();
         }
 
         private void Reportecs_Load(object sender, EventArgs e)
@@ -78,6 +88,8 @@ namespace SimulacroExamen
             CargarAlumnos();
             CargarTaller();
             CargarInscripcion();
+            label2.Visible=false;
+            label3.Visible=false;
         }
 
         private void buttonOrdenar_Click(object sender, EventArgs e)
@@ -86,6 +98,7 @@ namespace SimulacroExamen
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = reportes.OrderBy(a => a.nombre).ToList();
             dataGridView1.Refresh();
+            alumn();
 
         }
     }
