@@ -59,5 +59,11 @@ namespace SimulacroExamen
             Inscripcion inscripcion = new Inscripcion();
             inscripcion.Show();
         }
+
+        private void buttonReporte_Click(object sender, EventArgs e)
+        {
+            Reportecs reportecs = new Reportecs();
+            reportecs.Show();
+        }
     }
 }

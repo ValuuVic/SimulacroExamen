@@ -40,6 +40,7 @@
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonTaller = new System.Windows.Forms.Button();
             this.buttonInscripcion = new System.Windows.Forms.Button();
+            this.buttonReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,11 +155,22 @@
             this.buttonInscripcion.UseVisualStyleBackColor = true;
             this.buttonInscripcion.Click += new System.EventHandler(this.buttonInscripcion_Click);
             // 
+            // buttonReporte
+            // 
+            this.buttonReporte.Location = new System.Drawing.Point(27, 337);
+            this.buttonReporte.Name = "buttonReporte";
+            this.buttonReporte.Size = new System.Drawing.Size(98, 54);
+            this.buttonReporte.TabIndex = 12;
+            this.buttonReporte.Text = "Reporte";
+            this.buttonReporte.UseVisualStyleBackColor = true;
+            this.buttonReporte.Click += new System.EventHandler(this.buttonReporte_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonReporte);
             this.Controls.Add(this.buttonInscripcion);
             this.Controls.Add(this.buttonTaller);
             this.Controls.Add(this.buttonSalir);
@@ -194,6 +206,7 @@
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Button buttonTaller;
         private System.Windows.Forms.Button buttonInscripcion;
+        private System.Windows.Forms.Button buttonReporte;
     }
 }
 
