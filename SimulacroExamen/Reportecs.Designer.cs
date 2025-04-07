@@ -32,7 +32,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonMostrar = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonOrdenar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,21 +77,22 @@
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
-            // button1
+            // buttonOrdenar
             // 
-            this.button1.Location = new System.Drawing.Point(428, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonOrdenar.Location = new System.Drawing.Point(428, 135);
+            this.buttonOrdenar.Name = "buttonOrdenar";
+            this.buttonOrdenar.Size = new System.Drawing.Size(113, 50);
+            this.buttonOrdenar.TabIndex = 5;
+            this.buttonOrdenar.Text = "Ordenar en orden alfabetico";
+            this.buttonOrdenar.UseVisualStyleBackColor = true;
+            this.buttonOrdenar.Click += new System.EventHandler(this.buttonOrdenar_Click);
             // 
             // Reportecs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonOrdenar);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonMostrar);
             this.Controls.Add(this.dataGridView1);
@@ -111,6 +112,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonMostrar;
         private System.Windows.Forms.Button buttonSalir;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonOrdenar;
     }
 }

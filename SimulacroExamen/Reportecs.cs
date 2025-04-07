@@ -79,5 +79,14 @@ namespace SimulacroExamen
             CargarTaller();
             CargarInscripcion();
         }
+
+        private void buttonOrdenar_Click(object sender, EventArgs e)
+        {
+            CrearReporte();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = reportes.OrderBy(a => a.nombre).ToList();
+            dataGridView1.Refresh();
+
+        }
     }
 }
